@@ -1,118 +1,120 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sentra</title>
 
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/scripts.js" defer></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="navbar">
-      <div class="logo">
-        <span class="logo-text">Sentra</span>
-      </div>
+        <div class="logo">
+            <span class="logo-text">Sentra</span>
+        </div>
 
-      <nav>
-        <a href="#">Tecnologia</a>
-        <a href="#">Monitoramento</a>
-        <a href="#">Relatórios</a>
-        <a href="#">Alertas</a>
-        <a href="#">Empresas</a>
-      </nav>
+        <nav>
+            <a href="./index.html">Página Inicial</a>
+            <a href="./paginas/pag-sobre.html">Sobre</a>
+            <a href="./paginas/pag-faq.html">FAQ</a>
+            <a href="./paginas/pag-contato.html">Contato</a>
+            <a href="./paginas/pag-equipe.html">Equipe</a>
+        </nav>
 
-      <button class="btn-nav">Agendar Demonstração</button>
+        <a href="./paginas/pag-solucao.html" class="btn-nav">Agendar Demonstração</a>
     </header>
 
     <section class="hero">
-      <div class="parallax-layer layer-bg"></div>
+        <div class="parallax-layer layer-bg"></div>
 
-      <div class="hero-text parallax" data-speed="2">
-        <p class="tag">INTELIGÊNCIA ORBITAL CONTRA INCÊNDIOS</p>
+        <div class="hero-text parallax" data-speed="2">
+            <p class="tag">INTELIGÊNCIA ORBITAL CONTRA INCÊNDIOS</p>
 
-        <h1>
-          ALERTA DE INCÊNDIOS AUTOMATIZADO<br />
-          <span>(SENTRA)</span>
-        </h1>
+            <h1>
+                ALERTA DE INCÊNDIOS AUTOMATIZADO<br />
+                <span>(SENTRA)</span>
+            </h1>
 
-        <p class="desc">
-          Monitoramento via satélite em tempo real, inteligência de dados e
-          alertas para prevenção de incêndios florestais.
-        </p>
+            <p class="desc">
+                Monitoramento via satélite em tempo real, inteligência de dados e
+                alertas para prevenção de incêndios florestais.
+            </p>
 
-        <div class="actions">
-          <button class="btn-primary">Explorar Plataforma</button>
+            <div class="actions">
+                <button class="btn-primary">Explorar Plataforma</button>
 
-          <button class="btn-secondary">Ver Tecnologia</button>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="hero-media">
-          <img src="assets/astronauta.webp" alt="Astronauta em órbita" />
+                <button class="btn-secondary">Ver Tecnologia</button>
+            </div>
         </div>
 
-        <div class="heat-widget parallax" id="heat-widget">
-          <div class="heat-header">
-            🔥 Focos de calor (24h)
+        <div class="hero-right">
+            <div class="hero-media">
+                <img src="assets/astronauta.webp" alt="Astronauta em órbita" />
+            </div>
 
-            <span id="heat-time"> atualizando... </span>
-          </div>
+            <div class="heat-widget parallax" id="heat-widget">
+                <div class="heat-header">
+                    🔥 Focos de calor (24h)
 
-          <div class="heat-body">
-            <div class="heat-number" id="heat-count">0</div>
+                    <span id="heat-time"> atualizando... </span>
+                </div>
 
-            <div class="heat-label">detecções recentes</div>
-          </div>
+                <div class="heat-body">
+                    <div class="heat-number" id="heat-count">0</div>
+
+                    <div class="heat-label">detecções recentes</div>
+                </div>
+            </div>
+
+            <section class="stats">
+                <div class="stat-item">
+                    <div class="icon">🛰</div>
+
+                    <div class="stat-info">
+                        <p>SATÉLITES ATIVOS</p>
+                        <span>18</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="stat-item">
+                    <div class="icon">◎</div>
+
+                    <div class="stat-info">
+                        <p>ÁREAS EM RISCO</p>
+                        <span>43</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="stat-item">
+                    <div class="icon">🔥</div>
+
+                    <div class="stat-info">
+                        <p>INCÊNDIOS DETECTADOS</p>
+                        <span>127</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="stat-item">
+                    <div class="icon">◔</div>
+
+                    <div class="stat-info">
+                        <p>TEMPO DE ALERTA</p>
+                        <span>30s</span>
+                    </div>
+                </div>
+                <a href="#" class="stats-link"> VER TODOS OS DADOS → </a>
+            </section>
         </div>
-
-        <section class="stats">
-          <div class="stat-item">
-            <div class="icon">🛰</div>
-
-            <div class="stat-info">
-              <p>SATÉLITES ATIVOS</p>
-              <span>18</span>
-            </div>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="stat-item">
-            <div class="icon">◎</div>
-
-            <div class="stat-info">
-              <p>ÁREAS EM RISCO</p>
-              <span>43</span>
-            </div>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="stat-item">
-            <div class="icon">🔥</div>
-
-            <div class="stat-info">
-              <p>INCÊNDIOS DETECTADOS</p>
-              <span>127</span>
-            </div>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="stat-item">
-            <div class="icon">◔</div>
-
-            <div class="stat-info">
-              <p>TEMPO DE ALERTA</p>
-              <span>30s</span>
-            </div>
-          </div>
-          <a href="#" class="stats-link"> VER TODOS OS DADOS → </a>
-        </section>
-      </div>
     </section>
-  </body>
+</body>
+
 </html>

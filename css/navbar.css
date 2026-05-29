@@ -1,4 +1,10 @@
 /*navegacao em tds as paginas*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*navegacao em tds as paginas*/
 
 /*paleta de cores*/
 :root {
@@ -7,6 +13,7 @@
     --cor-cinza: #aaa;
     --cor-preto: #0b0b0f;
 }
+
 * {
     user-select: none;
 }
@@ -55,6 +62,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn-nav:hover {
