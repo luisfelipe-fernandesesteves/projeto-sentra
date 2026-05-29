@@ -39,7 +39,7 @@
     height: auto;
 }
 /*links*/
-.navbar nav a {
+.nav-link {
     margin: 0 12px;
     text-decoration: none;
     color: #ccc;
@@ -47,8 +47,17 @@
     transition: 0.3s;
 }
 
-.navbar nav a:hover {
+.nav-link:hover {
     color: var(--laranja-primario);
+}
+
+.text-highlight {
+    color: var(--laranja-primario);
+    transition: 0.5s;
+}
+
+.navbar:has(.nav-link:not(.text-highlight):hover) .text-highlight { /*na navbar, caso o evento hover aconteça fora do item text-highlight*/
+    color: #ccc;
 }
 /*botao solucao*/
 .btn-nav {
