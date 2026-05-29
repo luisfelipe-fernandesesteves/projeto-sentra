@@ -1,3 +1,16 @@
+/*navegacao em tds as paginas*/
+
+/*paleta de cores*/
+:root {
+    --laranja-primario: #ff6a00;
+    --cor-branco: #fff;
+    --cor-cinza: #aaa;
+    --cor-preto: #0b0b0f;
+}
+* {
+    user-select: none;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -7,11 +20,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
-
+    z-index: 100; /*garante que nao tera sobreposicao de outro elemento*/
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px); /*efeito de blur na nav*/
 
     border-bottom: 1px solid rgba(255, 106, 0, 0.15);
 }
@@ -19,7 +31,7 @@
 .logo-text {
     font-size: 22px;
     font-weight: 700;
-    color: white;
+    color: var(--cor-branco);
     text-shadow: 0 0 10px rgba(255,106,0,0.4);
 }
 
@@ -32,13 +44,13 @@
 }
 
 .navbar nav a:hover {
-    color: #ff6a00;
+    color: var(--laranja-primario);
 }
 
 .btn-nav {
     background: transparent;
-    border: 1px solid #ff6a00;
-    color: #ff6a00;
+    border: 1px solid var(--laranja-primario);
+    color: var(--laranja-primario);
     padding: 10px 16px;
     border-radius: 8px;
     cursor: pointer;
@@ -46,7 +58,7 @@
 }
 
 .btn-nav:hover {
-    background: #ff6a00;
-    color: white;
+    background: var(--laranja-primario);
+    color: var(--cor-branco);
     box-shadow: 0 0 15px rgba(255,106,0,0.5);
 }
