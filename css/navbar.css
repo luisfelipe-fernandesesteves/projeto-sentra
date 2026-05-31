@@ -57,7 +57,8 @@
     transition: 0.5s;
 }
 
-.navbar:has(.nav-link:not(.text-highlight):hover) .text-highlight { /*na navbar, caso o evento hover aconteça fora do item text-highlight*/
+.navbar:has(.nav-link:not(.text-highlight):hover) .text-highlight { 
+    /*na navbar, caso o evento hover aconteça fora do item text-highlight*/
     color: #ccc;
 }
 /*botao solucao*/

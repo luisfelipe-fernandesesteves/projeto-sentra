@@ -36,13 +36,13 @@ width: 450px;
 height: auto;
 background-color: rgba(0, 0, 0, 0.1);
 border-radius: 15px;
-border: 1px solid rgba(255, 94, 0, 0.2);
+border: 1px solid rgba(255, 94, 0, 0.2); 
 border-left: 4px solid var(--laranja-primario) ;
 padding: 40px;
 }
 
 .card:hover {
-    box-shadow: 0 0 18px rgba(255, 94, 0, 0.2);
+    box-shadow: 0 0 18px rgba(255, 94, 0, 0.2); /*eixo-x eixo-y desfoque*/
     transition: 0.3s ease;
     transform: translateY(-3px);
 }
@@ -52,7 +52,7 @@ padding: 40px;
     text-align: center;
     justify-content: center;
     color: var(--laranja-primario);
-    text-shadow:  0 0 18px rgba(255, 94, 0, 0.3);
+    text-shadow:  0 0 18px rgba(255, 94, 0, 0.3); 
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -60,7 +60,7 @@ padding: 40px;
 .card-text {
     margin-top: 30px;
     font-size: 14px;
-    color: var(--cor-branco);
+    color: var(--cor-cinza);
 }
 
 .card-icon {
@@ -213,7 +213,6 @@ padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     background: radial-gradient(circle at top, rgba(255,94,0,0.03), transparent 60%);
 }
 /*textos*/
@@ -242,8 +241,7 @@ padding: 40px;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
 }
 /*steps*/
 .workflow-step {
@@ -251,7 +249,6 @@ padding: 40px;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    flex: 1;
     max-width: 150px;
 }
 
@@ -347,7 +344,6 @@ padding: 40px;
 }
 .solution-header {
     margin-bottom: 25px;
-    line-height: 50px;
 }
 .solution-subtitle {
     color: var(--laranja-primario);
@@ -355,10 +351,10 @@ padding: 40px;
     font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
-
 }
 .solution-title {
     font-size: 50px;
+    margin-bottom: 30px;
 }
 .break {
     display: block;
@@ -366,17 +362,14 @@ padding: 40px;
 .solution-text {
     font-size: 20px;
     width: 45%;
-    margin-bottom: 50px;
+    color: var(--cor-cinza);
+    margin-bottom: 30px;
 }
 .solution-cards {
     width: 530px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 2fr); 
     gap: 24px;
-}
-
-.solution-cards .solution-cards {
-    display: contents;
 }
 
 .solution-card {
