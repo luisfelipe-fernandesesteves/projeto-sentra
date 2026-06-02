@@ -7,3 +7,24 @@ body {
     font-size: 16px;
     overflow: hidden;
 }
+
+/*footer*/
+.footer {
+    width: 100%;
+    padding: 24px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--laranja-primario);
+    position: relative;
+    z-index: 20;
+
+}
+
+.text-footer {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cor-branco);
+    text-align: center;
+}
