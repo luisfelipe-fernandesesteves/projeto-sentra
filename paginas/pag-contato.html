@@ -70,28 +70,30 @@
                 </div>
             </div>
             <div class="form">
-                <h2 class="form-title"><i class="fa-solid fa-paper-plane form-icon"></i>Envie sua mensagem</h2>
-                <p class="form-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, ullam.</p>
-                <form action="#" method="GET" class="contact-form">
-                    <fieldset>
-                        <!--inputs e labels-->
-                        <!--nome-->
-                        <label for="name" class="form-label">Nome</label>
-                        <input type="text" name="name" id="name" class="form-input" placeholder="Seu Nome" minlength="4"
-                            maxlength="120">
-                        <!--e-mail-->
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com"
-                            minlength="5" maxlength="100">
-                        <!--mensagem-->
-                        <label for="text" class="form-label">Mensagem</label>
-                        <input type="text" id="message" name="message" class="form-input"
-                            placeholder="Escreva sua mensagem..." minlength="15" maxlength="1000">
-                        <!--submit-->
-                        <button type="submit" class="form-btn">Enviar Mensagem <i
-                                class="fa-solid fa-arrow-right form-arrow"></i></button>
-                    </fieldset>
-                </form>
+                <div class="form-container">
+                    <h2 class="form-title"><i class="fa-solid fa-paper-plane form-icon"></i>Envie sua mensagem</h2>
+                    <p class="form-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, ullam.</p>
+                    <form action="#" method="GET" class="form-contact">
+                        <fieldset class="form-field">
+                            <!--inputs e labels-->
+                            <!--nome-->
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" name="name" id="name" class="form-input" placeholder="Seu Nome"
+                                minlength="4" maxlength="120">
+                            <!--e-mail-->
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com"
+                                minlength="5" maxlength="100">
+                            <!--mensagem-->
+                            <label for="text" class="form-label">Mensagem</label>
+                            <textarea class="form-input input-message" placeholder="Digite sua mensagem" 
+                            minlength="15" maxlength="1000"></textarea>
+                            <!--submit-->
+                            <button type="submit" class="form-btn">Enviar Mensagem <i
+                                    class="fa-solid fa-arrow-right form-arrow"></i></button>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
