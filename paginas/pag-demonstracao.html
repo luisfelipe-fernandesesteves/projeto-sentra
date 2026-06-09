@@ -53,7 +53,9 @@
                     <h2 class="demo-name">Sentra</h2>
                 </div>
                 <nav class="dash-nav">
-                    <a href="#" class="dashboard-link active"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+                    <a href="#" class="dashboard-link active"><i class="fa-solid fa-border-all"></i> Dashboard Geral</a>
+                    <a href="#" class="dashboard-link"><i class="fa-solid fa-file"></i> Relatórios</a>
+                    <a href="#" class="dashboard-link"><i class="fa-solid fa-arrow-rotate-left"></i> Histórico</a>
                 </nav>
             </div>
             <!-- conteúdo principal dashboard -->
@@ -70,6 +72,90 @@
                     <div class="dash-map-container">
                         <div class="dash-map">
                             <img src="../assets/mapa-brasil.png" alt="Mapa do Brasil" class="map-bg">
+                        </div>
+                    </div>
+                    <!-- direita cards -->
+                    <div class="dash-right">
+                        <div class="dash-card">
+                            <div class="card-header">
+                                <h3 class="dash-title">RISCO ATUAL</h3>
+                                <i class="fa-solid fa-sort-up text-muted"></i>
+                            </div>
+                            <h2 class="text-danger text-large">ALTO</h2>
+                            <p class="subtitle">Probabilidade de propagação</p>
+                            <div class="risk-meter">
+                                <span class="percentage">78%</span>
+                                <div class="meter-bar">
+                                    <div class="meter-fill">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash-card">
+                            <div class="card-header">
+                                <h3 class="dash-title">ALERTAS ATIVOS</h3>
+                                <i class="fa-solid fa-bell text-muted"></i>
+                            </div>
+                            <h2 class="text-large">27</h2>
+                            <p class="subtitle">+5 novos alertas</p>
+                        </div>
+
+                        <div class="dash-card">
+                            <div class="card-header">
+                                <h3 class="dash-title">EMISSÃO DE CO₂</h3>
+                                <i class="fa-solid fa-cloud text-muted"></i>
+                            </div>
+                            <h2 class="text-large">12.540 t</h2>
+                            <p class="subtitle">Últimas 24h</p>
+                        </div>
+                    </div>
+
+                    <!-- rodape cards -->
+                    <div class="dash-bottom">
+                        <div class="dash-card mini">
+                            <div class="card-top">
+                                <h3 class="dash-title">FOCOS DE CALOR (24H)</h3>
+                            </div>
+                            <div class="card-body">
+                                <h2>127</h2>
+                                <p class="text-success text-small"><i class="fa-solid fa-arrow-trend-down"></i> -10% vs
+                                    ontem</p>
+                            </div>
+                        </div>
+
+                        <div class="dash-card mini">
+                            <div class="card-top">
+                                <h3 class="dash-title">ÁREA QUEIMADA (HA)</h3>
+                            </div>
+                            <div class="card-body">
+                                <h2>8.392</h2>
+                                <p class="text-danger text-small"><i class="fa-solid fa-arrow-trend-up"></i> +15% vs
+                                    ontem</p>
+                            </div>
+                        </div>
+
+                        <div class="dash-card mini">
+                            <div class="card-top">
+                                <h3 class="dash-title">TENDÊNCIA</h3>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="text-danger"><i class="fa-solid fa-arrow-up"></i> AUMENTANDO</h2>
+                                <p class="subtitle text-small">Próximos 7 dias</p>
+                            </div>
+                        </div>
+
+                        <div class="dash-card mini">
+                            <div class="card-top">
+                                <h3 class="dash-title">SATÉLITES ATIVOS</h3>
+                            </div>
+                            <div class="card-body sat-body">
+                                <div>
+                                    <h2>18 / 18</h2>
+                                    <p class="subtitle text-small">Operacionais</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
