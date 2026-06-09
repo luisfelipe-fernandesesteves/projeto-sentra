@@ -1,186 +1,139 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Configurações básicas da página  -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Titulo Exibido na aba do Navegador -->
-    <title>Página Inicial / Sentra</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Arquivo CSS principal -->
-    <link rel="stylesheet" href="./css/styles.css" />
+  <title>Página Inicial / Sentra</title>
 
-    <!-- Arquivo JavaScript -->
-    <script src="./js/scripts.js" defer></script>
-    <script src="./js/navbar.js" defer></script>
+  <link rel="stylesheet" href="./css/styles.css" />
 
-    <!-- Biblioteca de ícones Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-  </head>
+  <script src="./js/scripts.js" defer></script>
+  <script src="./js/navbar.js" defer></script>
 
-  <body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
 
-      <!-- NAVBAR -->
-    <header class="navbar">
-      <!-- Logotipo da Plataforma -->
+<body>
 
-      <div class="logo">
-        <img
-          src="./assets/logotipo-sentra.webp"
-          alt="Logotipo Sentra"
-          class="logo"
-        />
+  <header class="navbar">
+
+    <div class="logo">
+      <img src="./assets/logotipo-sentra.webp" alt="Logotipo Sentra" class="logo" />
+    </div>
+
+    <nav aria-label="Navegação principal" class="navbar-links" id="navbarLinks">
+      <a href="./index.html" class="nav-link text-highlight">Página Inicial</a>
+      <a href="./paginas/pag-sobre.html" class="nav-link">Sobre</a>
+      <a href="./paginas/pag-faq.html" class="nav-link">FAQ</a>
+      <a href="./paginas/pag-contato.html" class="nav-link">Contato</a>
+      <a href="./paginas/pag-solucao.html" class="nav-link">Solução</a>
+      <a href="./paginas/pag-equipe.html" class="nav-link">Equipe</a>
+    </nav>
+
+    <a href="./paginas/pag-demonstracao.html" class="btn-nav">Demonstração</a>
+    <button class="hamburger" id="hamburger"></button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="background"></div>
+
+      <div class="hero-text" data-speed="2">
+        <p class="hero-text-main">INTELIGÊNCIA ORBITAL CONTRA INCÊNDIOS</p>
+
+        <h1 class="titulo-principal">
+          RELATÓRIOS DE INCÊNDIOS AUTOMATIZADOS<br />
+          <span class="text-sentra">(SENTRA)</span>
+        </h1>
+
+        <p class="description">
+          Monitoramento via satélite para dados mais precisos e criação de
+          relatórios acerca de incêndios e queimadas na região da Amazônia.
+        </p>
+
+        <div class="actions">
+          <button class="btn-primary">Explorar Plataforma</button>
+          <button class="btn-secondary">Ver Tecnologia</button>
+        </div>
       </div>
 
-      <!-- Menu principal de navegação -->
-      <nav aria-label="Navegação principal" class="navbar-links" id="navbarLinks">
-        <a href="./index.html" class="nav-link text-highlight"
-          >Página Inicial</a
-        >
-        <a href="./paginas/pag-sobre.html" class="nav-link">Sobre</a>
-        <a href="./paginas/pag-faq.html" class="nav-link">FAQ</a>
-        <a href="./paginas/pag-contato.html" class="nav-link">Contato</a>
-        <a href="./paginas/pag-solucao.html" class="nav-link">Solução</a>
-        <a href="./paginas/pag-equipe.html" class="nav-link">Equipe</a>
-      </nav>
+      <div class="hero-right">
+        <div class="hero-media">
+          <img class="hero-image" src="./assets/astronauta.webp" alt="Astronauta em órbita com a Terra ao fundo" />
+        </div>
 
-      <!-- Botão Demostração -->
-      <a href="./paginas/pag-demonstracao.html" class="btn-nav">Demonstração</a>
-      <button class="hamburger" id="hamburger"></button>
-    </header>
+        <div class="heat-widget" id="heat-widget">
+          <div class="heat-header">
+            Focos de calor (24h)
+            <span id="heat-time">atualizando...</span>
+          </div>
 
-    <main>
-
-       <!-- HERO SECTION -->
-      <section class="hero">
-        <div class="background"></div>
-
-        <!-- Área de textos principais -->
-        <div class="hero-text" data-speed="2">
-          <!-- Texto introdutório -->
-          <p class="hero-text-main">INTELIGÊNCIA ORBITAL CONTRA INCÊNDIOS</p>
-
-          <!-- Título principal -->
-          <h1 class="titulo-principal">
-            RELATÓRIOS DE INCÊNDIOS AUTOMATIZADOS<br />
-            <span class="text-sentra">(SENTRA)</span>
-          </h1>
-
-          <!-- Descrição da solução -->
-          <p class="description">
-            Monitoramento via satélite para dados mais precisos e criação de
-            relatórios acerca de incêndios e queimadas na região da Amazônia.
-          </p>
-
-          <!-- Botões de ação -->
-          <div class="actions">
-            <button class="btn-primary">Explorar Plataforma</button>
-            <button class="btn-secondary">Ver Tecnologia</button>
+          <div class="heat-body">
+            <div class="heat-number" id="heat-count">0</div>
+            <div class="heat-label">detecções recentes</div>
           </div>
         </div>
 
-        <!-- Área visual da hero -->
-        <div class="hero-right">
-          <!-- Imagem principal -->
-          <div class="hero-media">
-            <img
-              class="hero-image"
-              src="./assets/astronauta.webp"
-              alt="Astronauta em órbita com a Terra ao fundo"
-            />
-          </div>
-
-          <!-- Widget de monitoramento -->
-          <div class="heat-widget" id="heat-widget">
-            <div class="heat-header">
-              Focos de calor (24h)
-              <span id="heat-time">atualizando...</span>
-            </div>
-
-            <div class="heat-body">
-              <div class="heat-number" id="heat-count">0</div>
-              <div class="heat-label">detecções recentes</div>
+        <div class="stats-container">
+          <div class="stat-item">
+            <i class="fa-solid fa-satellite stat-icon" aria-hidden="true"></i>
+            <div class="stat-info">
+              <p class="text-stats">SATÉLITES ATIVOS</p>
+              <span class="stat-number">18</span>
             </div>
           </div>
 
-          <!-- Estatísticas da plataforma -->
-          <div class="stats-container">
-            <!-- Card: Satélites -->
-            <div class="stat-item">
-              <i class="fa-solid fa-satellite stat-icon" aria-hidden="true"></i>
-              <div class="stat-info">
-                <p class="text-stats">SATÉLITES ATIVOS</p>
-                <span class="stat-number">18</span>
-              </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-circle-exclamation stat-icon" aria-hidden="true"></i>
+            <div class="stat-info">
+              <p class="text-stats">ÁREAS EM RISCO</p>
+              <span class="stat-number">43</span>
             </div>
+          </div>
 
-            <!-- Card: Áreas em risco -->
-            <div class="stat-item">
-              <i
-                class="fa-solid fa-circle-exclamation stat-icon"
-                aria-hidden="true"
-              ></i>
-              <div class="stat-info">
-                <p class="text-stats">ÁREAS EM RISCO</p>
-                <span class="stat-number">43</span>
-              </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-fire stat-icon" aria-hidden="true"></i>
+            <div class="stat-info">
+              <p class="text-stats">INCÊNDIOS DETECTADOS</p>
+              <span class="stat-number">127</span>
             </div>
+          </div>
 
-            <!-- Card: Incêndios detectados -->
-            <div class="stat-item">
-              <i class="fa-solid fa-fire stat-icon" aria-hidden="true"></i>
-              <div class="stat-info">
-                <p class="text-stats">INCÊNDIOS DETECTADOS</p>
-                <span class="stat-number">127</span>
-              </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-clock stat-icon" aria-hidden="true"></i>
+            <div class="stat-info">
+              <p class="text-stats">TEMPO DE ALERTA</p>
+              <span class="stat-number">30s</span>
             </div>
-
-            <!-- Card: Tempo de Alerta -->
-            <div class="stat-item">
-              <i class="fa-solid fa-clock stat-icon" aria-hidden="true"></i>
-              <div class="stat-info">
-                <p class="text-stats">TEMPO DE ALERTA</p>
-                <span class="stat-number">30s</span>
-              </div>
-            </div>
-            <!-- Link para visualizar todos os dados -->
-            <div class="stat-item">
-              <a href="#" class="stats-link">VER TODOS OS DADOS →</a>
-            </div>
+          </div>
+          <div class="stat-item">
+            <a href="#" class="stats-link">VER TODOS OS DADOS →</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- SEÇÃO DE NAVEGAÇÃO -->
-      <section class="plataforma-section">
-        <h2 class="text-h1-plataforma">EXPLORE A NOSSA PLATAFORMA!</h2>
+    <section class="plataforma-section">
+      <h2 class="text-h1-plataforma">EXPLORE A NOSSA PLATAFORMA!</h2>
 
-        <!-- Botões para as páginas do projeto -->
-        <div class="plataforma-buttons">
-          <a href="./paginas/pag-sobre.html" class="btn-plataforma">
-            Sobre o Projeto</a
-          >
-          <a href="./paginas/pag-faq.html" class="btn-plataforma"> FAQ </a>
-          <a href="./paginas/pag-contato.html" class="btn-plataforma"
-            >Contato
-          </a>
-          <a href="./paginas/pag-solucao.html" class="btn-plataforma"
-            >Solução</a
-          >
-          <a href="./paginas/pag-equipe.html" class="btn-plataforma"
-            >Nossa Equipe</a
-          >
-        </div>
-      </section>
-    </main>
+      <div class="plataforma-buttons">
+        <a href="./paginas/pag-sobre.html" class="btn-plataforma">
+          Sobre o Projeto</a>
+        <a href="./paginas/pag-faq.html" class="btn-plataforma"> FAQ </a>
+        <a href="./paginas/pag-contato.html" class="btn-plataforma">Contato
+        </a>
+        <a href="./paginas/pag-solucao.html" class="btn-plataforma">Solução</a>
+        <a href="./paginas/pag-equipe.html" class="btn-plataforma">Nossa Equipe</a>
+      </div>
+    </section>
+  </main>
 
-    <!-- RODAPÉ -->
-    <footer class="footer">
-      <p class="text-footer">© 2026 SENTRA. Todos os direitos reservados.</p>
-    </footer>
-  </body>
+  <footer class="footer">
+    <p class="text-footer">© 2026 SENTRA. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
 </html>
