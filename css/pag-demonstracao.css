@@ -24,8 +24,9 @@ body {
     padding: 2rem;
     gap: 80px;
     max-width: 1600px;
-    margin: 170px auto;
+    margin: 180px auto;
     color: var(--color-text);
+    align-items: center;
 }
 
 /* esquerda - info*/
@@ -67,9 +68,8 @@ body {
 
 .features-list {
     padding: 1rem 1.5rem;
-    color: var(--color-subtitle);
+    color: var(--color-text);
     text-decoration: none;
-    align-items: center;
     gap: 15px;
     border-left: 3px solid var(--laranja-primario);
     border-radius: 8px;
@@ -112,7 +112,8 @@ body {
     padding: 0 1.5rem;
     margin-bottom: 2.5rem;
 }
-/* dashboard esquerda */
+
+/* links */
 .dashboard-link {
     padding: 1rem 1.5rem;
     color: var(--color-text);
@@ -122,9 +123,23 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    transition: 0.2s ease;
+}
+
+.dashboard-link:not(.active) {
+    border-bottom: 1px solid rgb(42, 46, 57);
+}
+
+.dashboard-link:not(.active):hover {
+    background-color: rgb(42, 46, 57, 0.5);
+}
+
+.active {
     background-color: rgba(217, 96, 19, 0.1);
     border-left: 2px solid rgba(217, 96, 19, 0.7);
 }
+
+/* aside */
 .dash-sidebar {
     border-radius: 12px;
     width: 220px;
@@ -133,6 +148,7 @@ body {
     flex-direction: column;
     padding: 1.5rem 0;
     background-color: var(--color-panel);
+    flex-shrink: 0;
 }
 
 .dash-nav {
@@ -156,6 +172,12 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.dash-title {
+    color: var(--color-subtitle);
+    text-transform: uppercase;
+    margin: 0;
+}
+
 /* atualizacao */
 .update-time {
     font-size: 0.8rem;
@@ -171,6 +193,7 @@ body {
     border-radius: 50%;
     background-color: var(--color-success);
     display: inline-block;
+    flex-shrink: 0;
 }
 
 /* grid dash */
@@ -181,6 +204,7 @@ body {
     gap: 1.5rem;
     flex: 1;
     min-width: 0;
+    align-items: start;
 }
 
 /* mapa */
@@ -193,6 +217,7 @@ body {
     position: relative;
     overflow: hidden;
     min-height: 470px;
+    height: 500px;
 }
 
 .dash-map {
@@ -208,4 +233,118 @@ body {
     object-fit: cover;
     opacity: 0.6;
     pointer-events: none;
+}
+
+/* dash direita */
+.dash-right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dash-card {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: var(--color-subtitle);
+    font-weight: 600;
+    gap: 10px;
+}
+
+/* textos */
+.text-danger {
+    color: var(--color-danger);
+}
+
+.text-success {
+    color: var(--color-success);
+}
+
+.text-large {
+    font-size: 2rem;
+    margin: 0 0 5px 0;
+    line-height: 1.1;
+}
+
+.percentage {
+    color: var(--color-subtitle);
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: var(--color-subtitle);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* dashboard inferior */
+.dash-bottom {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 95px;
+    align-items: stretch;
+}
+
+.dash-bottom .dash-card {
+    min-height: 130px;
+    justify-content: space-between;
+}
+
+.card-top {
+    font-size: 0.75rem;
+    color: var(--color-subtitle);
+    margin: 0 0 1rem 0;
+    line-height: 1.3;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.card-body h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+.card-body p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.text-small {
+    font-size: 0.75rem;
+}
+
+.sat-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
 }
